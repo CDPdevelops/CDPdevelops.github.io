@@ -1,244 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>CP</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="COM353 Weekly Learning Log">
-<meta name="author" content="Christopher Paul">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir Next Condensed Regular">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier New">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://github.com/CDPdevelops/CDPdevelops.github.io/blob/master/css/style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Avenir Next Condensed Regular"}
-.bar,h1,h2,button {font-family: "Courier New"}
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
 <body>
 
-<!-- Navbar on larger screens-->
-<div class="top">
-  <div class="bar black card -right large">
-    <a class="bar-item button hide-medium hide-large right padding-large hover-white large -red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a class="button padding-large">Christopher Paul</a>
-    <a href="#contact" class="bar-item button hide-small padding-large hover-white right">contact</a>
-    <a href="#usefulres" class="bar-item button hide-small padding-large hover-white right">useful resources</a>
-    <a href="#weeklyLog" class="bar-item button hide-small padding-large hover-white right">weekly logs</a>
-    <a href="#about" class="bar-item button hide-small padding-large hover-white right">about</a>
-    <a href="#" class="bar-item button hide-small padding-large right">home</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-    <div id="navDemo" class="bar-block white hide hide-large hide-medium large">
-      <a href="#" class="bar-item button padding-large">home</a>
-      <a href="#about" class="bar-item button padding-large">about</a>
-      <a href="#weeklyLog" class="bar-item button padding-large">weekly logs</a>
-      <a href="#usefulres" class="bar-item button padding-large">useful resources</a>
-      <a href="#contact" class="bar-item button padding-large">contact</a>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
     </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
 </div>
 
-<!-- Header -->
-<header class="container black center" style="padding:287px 16px">
-  <h1 class="margin jumbo text-aqua2">&lt;Hi, I'm Chris/&gt;</span></h1>
-  <p class="xlarge">Welcome to my learning log!</p>
-  <a href ="#about" class="button black padding-large large margin-top round-large border">Get Started</a>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
 
-    <!-- Character animation-->
-  <div class="hide-small hide-medium">
-    <div class="error404page">
-      <div class="newcharacter404">
-        <div class="chair404"></div>
-        <div class="leftshoe404"></div>
-        <div class="rightshoe404"></div>
-        <div class="legs404"></div>
-        <div class="torso404">
-        <div class="body404"></div>
-        <div class="leftarm404"></div>
-        <div class="rightarm404"></div>
-        <div class="head404">
-        <div class="eyes404"></div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
         </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
         </div>
-        <div class="laptop404"></div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- End of header-->
-</header>
 
-  <!-- Typewriter animation-->
-<div class="hide-small hide-medium">
-<pre id="typewriter" style="color: white; border-color: black;">
-<span class="var-highlight">var</span> object</span> = {
-    name: <span class="string-highlight">'Christopher Paul'</span>,
-    module: <span class="string-highlight">'COM353'</span>,
-    location: <span class="string-highlight">'Earth'</span>,
-    properties:[<span class="string-highlight">'Javascript'</span>,
-                <span class="string-highlight">'HTML'</span>,
-                <span class="string-highlight">'CSS'</span>];
-}; </pre></div>
-
-
-<!-- First Grid -->
-<div id="about" class="row-padding padding-64 container">
-  <div class="content">
-    <div class="half center">
-      <h1 class="center text-orange">&lt;About/&gt;</h1>
-
-      <h4>Hi I'm Chris and I'm currently a third year undergrad student undergoing the COM353 Dynamic Web Authoring module.</h4>
-
-      <h4 class="padding-32">The purpose of this learning log is to provide solutions to practicals along the COM353 module. Each weekly practical will be documented with a summary of what was achieved and the final solution. Furthermore, useful resources that I find will be documented and referenced.</h4>
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
     </div>
   </div>
-  <!-- End of first grid-->
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
 </div>
 
-
-<!-- Second Grid -->
-<div id="weeklyLog" class="row-padding black padding-64 container">
-  <div class="content">
-    <div class="col center">
-      <h1 class="text-aqua2">&lt;Weekly Logs/&gt;</h1>
-      <h5 class="padding">Listed below are the weekly learning logs from weeks 1-10. Learning summary and practical solution will be recorded within each section.</h5>
-    </div>
-  </div>
-
-  <!-- Linked image week1-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week1/week1.html">
-    <img id="week1" class="-left" src="CDPdevelops.github.io/learning_log/media/week1.png" alt="Week1">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week2-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week2/week2.html">
-    <img id="week2" class="-left" src="CDPdevelops.github.io/learning_log/media/week2.png" alt="Week2">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week3-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week3/week3.html">
-    <img id="week3" class="-left" src="CDPdevelops.github.io/learning_log/media/week3.png" alt="Week3">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week4-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week4/week4.html">
-    <img id="week4" class="-left" src="CDPdevelops.github.io/learning_log/media/week4.png" alt="Week4">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week5-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week5/week5.html">
-    <img id="week5" class="-left" src="CDPdevelops.github.io/learning_log/media/week5.png" alt="Week5">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week6-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week6/week6.html">
-    <img id="week6" class="-left" src="CDPdevelops.github.io/learning_log/media/week6.png" alt="Week6">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week7-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week7/week7.html">
-    <img id="week7" class="-left" src="CDPdevelops.github.io/learning_log/media/week7.png" alt="Week7">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week8-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week8/week8.html">
-    <img id="week8" class="-left" src="CDPdevelops.github.io/learning_log/media/week8.png" alt="Week8">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week9-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week9/week9.html">
-    <img id="week9" class="-left" src="/learning_log/media/week9.png" alt="Week9">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week10-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="CDPdevelops.github.io/learning_log/html/week10/week10.html">
-    <img id="week10" class="-left" src="/learning_log/media/week10.png" alt="Week10">
-    </a>
-  </div>
-  </div>
-  <!-- End of second grid-->
-</div>
-
-
-
-<!-- Third Grid -->
-<div id="usefulres" class="row-padding white padding-64 container">
-  <div class="content">
-    <div class="col center">
-      <h1 class="text-orange">&lt;Useful Resources/&gt;</h1>
-      <h5 class="padding">Listed below are helpful resources that I found, expanding on HTML5, CSS and Javascript</h5>
-    </div>
-  </div>
-  <!-- End of third grid-->
-</div>
-
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
-<footer id="contact" class="container padding-64 center black">  
-    <div class="col center">
-      <h1 class="text-aqua2">&lt;Contact Me/&gt;</h1>
-      <h5 class="padding">Contact me via: <a href="mailto:Paul-C5@ulster.ac.uk">Paul-C5@ulster.ac.uk</a></h5>
-    </div>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
-
-<footer class="footer2">
-    <p class="text-white">All rights reserved. Christopher Paul &copy; 2020
-      <a href="#" class="-border-box -right -hover-text-green">
-        <i class="fa fa-arrow-up right"> RETURN TO TOP</i>
-      </a>
-    </p> 
-</footer>
-<!-- End of Footer -->
-
-
 
 <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
-  if (x.className.indexOf("show") == -1) {
-    x.className += " show";
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
   } else { 
-    x.className = x.className.replace(" show", "");
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 </script>
-<script src="CDPdevelops.github.io/learning_log/js/js.js"></script>
 
 </body>
 </html>
