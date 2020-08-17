@@ -9,7 +9,7 @@ function myFunction() {
 }
 
     /* ---- typewriter animation codepen 
-    animation is sourced from: https://---- */
+    animation is sourced from: https://codepen/animations.com---- */
   function setupTypewriter(t) {
       var HTML = t.innerHTML;
 
