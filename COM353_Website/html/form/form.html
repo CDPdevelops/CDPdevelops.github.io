@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Practical5_Q3d</title>
-<script src="../../practicals/practical_4/js/myjslib.js"></script>
-<script>
-
-function DisplayTex (inputtext) {
-  var fname = document.getElementById("fname").value;
-  var course = document.getElementById("course").value;
-  var uni = document.getElementById("uni").value;
-  var campus = document.getElementById("campus").value;
-  //values gathered from the input form
-
-  {
-  var x = document.getElementById("form");
-  var details = "<h1>Details Returned:</h1>";
-  var i;
-  for (i = 0; i < x.length; i++) {
-    details = details + x.elements[i].value + "<br><br>";
-  } //Returned details selected with a linebreak between each value.
-
-  document.getElementById("displayForm").innerHTML = details + ("Hello " + fname + ", Welcome to the JavaScript homepage! <br><br> You are a " + course + " student in " + uni + " at the " + campus + " campus.");
-	}//Details incorporated into a welcome message.
-}
-
-</script>
+<title>Contact Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" coantent="width=device-width, initial-scale=1">
+<meta name="description" content="COM353 Weekly Learning Log">
+<meta name="author" content="Christopher Paul">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier%20New">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,#RT{font-family: 'Nunito', sans-serif;}
+.bar,h1,h2,button {font-family: "Avenir"}
+</style>
 </head>
 <body>
 
-<h1>Please enter to retrieve a quote!</h1> <!--Page heading-->
+<header>
+<!-- Navbar on larger screens-->
+<div class="top">
+  <div class="bar white card -right large">
+    <a class="bar-item button hide-medium hide-large right padding-large hover-white large -red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="button padding-large">CP Car Sales</a>
+    <a href="#contact" class="bar-item button hide-small padding-large hover-white right">contact</a>
+    <a href="../../index.html#weeklyLog" class="bar-item button hide-small padding-large hover-white right">stocklist</a>
+    <a href="../../index.html#about" class="bar-item button hide-small padding-large hover-white right">about</a>
+    <a href="../../index.html" class="bar-item button hide-small padding-large right">home</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+    <div id="navDemo" class="bar-block white hide hide-large hide-medium large">
+      <a href="../../index.html" class="bar-item button padding-large">home</a>
+      <a href="../../index.html#about" class="bar-item button padding-large">about</a>
+      <a href="../../index.html#weeklyLog" class="bar-item button padding-large">stocklist</a>
+      <a href="../../index.html#usefulres" class="bar-item button padding-large">useful resources</a>
+      <a href="../../index.html#contact" class="bar-item button padding-large">contact</a>
+    </div>
+</div>
+</header>
+
+<!-- Header -->
+<header class="container black center blogheader">
+  <h1 class="margin jumbo text-aqua2">Contact Us!</h1>
+  <p class="xlarge">Below fill in our contact form to enquire!</p>
+  <a href ="#about" class="button black padding-large large margin-top round-large border">Get Started</a>
+  <!-- End of header-->
+</header>
+
+
+<!-- First Grid -->
+<div id="about" class="row-padding padding-32 container">
+  <div class="content justify">
+    <div class="col center">
+      <h1 class="text-orange">Vehicle Details</h1>
+
+      <h1>Please enter to retrieve a quote!</h1> <!--Page heading-->
 <form id="form">
 
 <details>
-	<summary>info</summary>
-	<p>The following table allows the user to enter details about their studies and return those details upon the 'Display Details' button.</p>
+  <summary>info</summary>
+  <p>The following table allows the user to enter details about their studies and return those details upon the 'Display Details' button.</p>
 </details>
 
 <!--input placeholder for first name-->
@@ -71,6 +98,189 @@ function DisplayTex (inputtext) {
 
 <p id="displayForm"></p> <!-- The innerHTML property sets or returns the HTML content (inner HTML) of an element. Alert the HTML content of a <p> element with id = "displayForm":-->
 
+
+
+    </div>
+
+    <div>
+      &nbsp;
+      <h1 class="text-orange center">&lt;Summary/&gt;</h1>
+      <h5 class="text-orange">What you need to know!</h5>
+      <h5>We can send you a detailed sales video if needed, give a trade-in valuation, apply for finance online via www.CPCarSales.co.uk or over the phone, distance sign any paperwork. We can then deliver your new car if valid postcode is provided, fully sanitised via our trained driver in full PPE, so you won't have to travel to complete your purchase. Please phone/email for further details - 02863527354 - CPCarSales@outlook.co.uk</h5>
+
+      <h5>19" Alloy Wheels, Climate Control, Leather Trim, Navigation System, Parking Sensor(s) &
+     Privacy Glass.</h5>
+
+
+<h5>Zero Deposit Finance Available, We Settle Outstanding Finance, Delivery Anywhere UK/IRE, ALL Trade Ins Welcome.
+All CPSales Vehicles are HPI Clear of Finance, Theft, Accidents & Warranted Mileage, also come Fully Valeted. Comes with our 6 Month In House Warranty, extended Warranties Available.
+Attractive Finance Packages Available.</h5>
+
+      </div>
+    </div>
+  </div>
+  <!-- End of first grid-->
+</div>
+
+<!-- Second Grid -->
+<div id="stocklist" class="row-padding black padding-64 container">
+  <div class="content">
+    <div class="col center">
+      <h1 class="text-aqua2">Our Stocklist</h1>
+      <h5 class="padding">Listed below are the 12 new cars we have in stock. Check them out!</h5>
+    </div>
+  </div>
+
+  <!-- Linked image car1-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car1/car1.html">
+    <img alt="Car 1" id="car1" class="-left image" src="../../media/car1.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car2-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car2/car2.html">
+    <img alt="Car 2" id="car2" class="-left image" src="../../media/car2.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car3-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car3/car3.html">
+    <img alt="Car 3" id="car3" class="-left image" src="../../media/car3.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car4-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car4/car4.html">
+    <img alt="Car 4" id="car4" class="-left image" src="../../media/car4.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car5-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car5/car5.html">
+    <img alt="Car 5" id="car5" class="-left image" src="../../media/car5.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car6-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car6/car6.html">
+    <img alt="Car 6" id="car6" class="-left image" src="../../media/car6.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car7-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car7/car7.html">
+    <img alt="Car 7" id="car7" class="-left image" src="../../media/car7.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car8-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car8/car8.html">
+    <img alt="Car 8" id="car8" class="-left image" src="../../media/car8.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car9-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car9/car9.html">
+    <img alt="Car 9" id="car9" class="-left image" src="../../media/car9.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car10-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car10/car10.html">
+    <img alt="Car 10" id="car10" class="-left image" src="../../media/car10.jpg">
+    </a>
+  </div>
+  </div>
+
+    <!-- Linked image car11-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car11/car11.html">
+    <img alt="Car 11" id="car11" class="-left image" src="../../media/car11.jpg">
+    </a>
+  </div>
+  </div>
+
+      <!-- Linked image car11-->
+  <div class=" col l3 m6 s12 -padding-small">
+  <div class=" white hover-opacity">
+    <a href="../../html/car12/car12.html">
+    <img alt="Car 12" id="car12" class="-left image" src="../../media/car12.jpg">
+    </a>
+  </div>
+  </div>
+  <!-- End of second grid-->
+</div>
+
+<!-- Footer -->
+<footer id="contact" class="container padding-64 center white">  
+    <div class="col center">
+      <h1 class="text-aqua2">Contact Me</h1>
+      <h5 class="padding">Contact me via: <a href="mailto:CPCarSales@outlook.com">CPCarSales@outlook.com</a></h5>
+      <h5>All car images have been referenced from: Stormmotors.co.uk</h5>
+    </div>
+</footer>
+
+<footer class="footer2">
+    <p class="text-white">All rights reserved. CP Car Sales &copy; 2020
+      <a href="#" class="-border-box -right -hover-text-green">
+        <i id="Arrow" class="fa fa-arrow-up right"><span id="RT"> return to top</span></i>
+      </a>
+    </p> 
+</footer>
+<!-- End of Footer -->
+<script>
+
+function DisplayTex (inputtext) {
+  var fname = document.getElementById("fname").value;
+  var course = document.getElementById("course").value;
+  var uni = document.getElementById("uni").value;
+  var campus = document.getElementById("campus").value;
+  //values gathered from the input form
+
+  {
+  var x = document.getElementById("form");
+  var details = "<h1>Details Returned:</h1>";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    details = details + x.elements[i].value + "<br><br>";
+  } //Returned details selected with a linebreak between each value.
+
+  document.getElementById("displayForm").innerHTML = details + ("Hello " + fname + ", Welcome to the JavaScript homepage! <br><br> You are a " + course + " student in " + uni + " at the " + campus + " campus.");
+	}//Details incorporated into a welcome message.
+}
+
+</script>
+</head>
 </body>
 </html>
 
