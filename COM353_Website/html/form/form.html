@@ -13,6 +13,47 @@
 <style>
 body,h1,h2,h3,h4,h5,h6,#RT{font-family: 'Nunito', sans-serif;}
 .bar,h1,h2,button {font-family: "Avenir"}
+
+ Contact Form*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
 </head>
 <body>
@@ -56,41 +97,38 @@ body,h1,h2,h3,h4,h5,h6,#RT{font-family: 'Nunito', sans-serif;}
       <h1 class="text-orange">Vehicle Details</h1>
 
       <h1>Please enter to retrieve a quote!</h1> <!--Page heading-->
-<form id="form">
 
-<details>
-  <summary>info</summary>
-  <p>The following table allows the user to enter details about their studies and return those details upon the 'Display Details' button.</p>
-</details>
+<div class=" -padding-large">
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required placeholder="Full name required">
 
-<!--input placeholder for first name-->
-<label for="fname">First name:</label><br>
- <input type="text" id="fname" name="fname" value=""><br>
+    <label for="emailBox">Email</label>
+    <input id="emailAddress" type="text" size="64" maxLength="64" required
+          placeholder="________@_________.com"
+          title="Please provide an email in the correct format.">
 
-<!--(drop-down lists) to allow user select the University’s name, campus, course title-->
-<label for="uni">University Selected:</label><br>
-  <select id="uni" name="uni">
-    <option value="Ulster University">Ulster University</option>
-    <option value="Queens University">Queens University</option>
-  </select><br>
+    <label for="contactNum">Contact Number</label>
+    <input type="text" id="contactnum" name="contactnumber" required placeholder="">
 
-<label for="campus">Campus:</label><br>
-  <select id="campus" name="campus">
-    <option value="Jordanstown">Jordanstown</option>
-    <option value="Belfast">Belfast</option>
-    <option value="Magee">Magee</option>
-    <option value="Coleraine">Coleraine</option>
-  </select><br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="uk">UK</option>
+      <option value="ireland">IRELAND</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="not stated">NOT STATED</option>
+    </select>
 
-<label for="course">Course:</label><br>
-  <select id="course" name="course">
-    <option value="Software Engineering">Software Engineering</option>
-    <option value="Computer Science">Computer Science</option>    
-    <option value="Interactive Multimedia Design">Interactive Multimedia Design</option>
-    <option value="Information Communication Technology">Information Communication Technology</option>
-  </select><br>
+    <label for="message">Message</label>
+    <textarea id="subject" name="subject" required placeholder="Write something.." style="height:200px"></textarea>
 
-</form><br> <!-- end of form-->
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
 
 <!--Button to display details selected on form.-->
 
