@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>#thenorthtide / Northtide</title>
+<link rel="shortcut icon" href="/Users/chrispaul/Desktop/Website/practice/img/favicon.ico" />
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="file:///Users/chrispaul/Desktop/Website/stylesheet.txt">
+<link rel="stylesheet" href="family=Oswald">
+<link rel="stylesheet" href="family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Avenir Next Condensed Regular"}
+body {font-family: "Avenir Next Condensed Regular"}
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.productNav {
+  float: left;
+  width: 33.33%;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+                              /* "Centered Logo" centered line image*/
+.flourish {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.flourish:before, 
+.flourish:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center; 
+  position: relative;
+  width: 45%;
+  border-top-style: solid;
+  border-top-width: 1px;
+
+line-height: 0.1em;
+}
+.flourish:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.flourish:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+img {
+  vertical-align: middle;
+}
+
+                              /* "Featured Products" centered line header*/
+
+h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+
+                              /* DROP DOWN MENU LOCATED IN NAVIGATION BAR */
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: 10px;
+  outline: none;
+  color: black;
+  padding: 8px 80px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: black;
+  padding: 5px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background: white;
+  height: 305px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* 2019 WINNERS*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 15px;
+  margin-top: -50px;
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 92%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  right: 92%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: green;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: relative;
+  top: -10px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+
+
+
+
+
+
+
+
+<body class="light-grey">
+
+<!-- Navbar -->
+
+<div id="navbar" class="-top ">
+  
+<div class="-bar -black -card -centre-align -medium">
+    
+<a class="-bar-item -button -hide-large -hide-large -right -padding-large -hover-white -large -black" href="javascript:void(0);" onclick="myFunction('myLinks')" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+<a href="file:///Users/chrispaul/Desktop/Website/Search-Bar/search.html" class="-bar-item -button -right -padding-large -hover-white -large -black" href="javascript:void(0);" onclick="myFunction(fa-search)" title="Toggle Navigation Menu"><i class="fa fa-search"></i></a>
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+ <img class="-image -center" src="file:///Users/chrispaul/Desktop/Website/images/logoPoint.png" alt="Northtide Logo" width="55" height="55">
+
+  <!-- Navigation links (hidden by default) -->
+     <div id="myLinks">
+     &#160;
+     <header class="-container -black -center -margin-transparent" style="padding: 40px 16px margin-top: 10px">
+     <a href="file:///Users/chrispaul/Desktop/Website/homepage/northtide.html">
+     <img class=" -image -center -animate-top" src="file:///Users/chrispaul/Desktop/Website/images/logo2.png" alt="Northtide Logo" width="300" height="165"></a> 
+     </header>
+  <center>
+  <a class= "-animate-left" href="file:///Users/chrispaul/Desktop/Website/homepage/northtide.html"><h1><b>Home</b></h1></a>
+  <a class= "-animate-right" href="file:///Users/chrispaul/Desktop/Website/shop/shop.html"><h1><b>Shop</b></h1></a>
+  <a class= "-animate-left" href="file:///Users/chrispaul/Desktop/Website/contact/contact.html"><h1><b>Contact Us</b></h1></a>
+  <a class= "-animate-right" href="file:///Users/chrispaul/Desktop/Website/blog/blog.html"><h1><b>Blog</b></h1></a>
+  <a class= "-animate-left" href="file:///Users/chrispaul/Desktop/Website/about%20us/aboutUS.html"><h1><b>About Us</b></h1></a>
+  <a class= "-animate-right" href="file:///Users/chrispaul/Desktop/Website/%23thenorthtide.html"><h1><b>#thenorthtide</b></h1></a>
+ </center>
+</div>
+</div>
+</div>
+</header>
+<!-- END Top Navigation Menu -->
+
+</div>
+  
+<!--  -content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class=" -content" style="max-width:1600px">
+<h6>.</h6>
+
+  <!-- Header -->
+<header class="-container -white -center" style="padding:40px 16px">
+  <a href="file:///Users/chrispaul/Desktop/Website/homepage/northtide.html">
+<img class=" -image -center" src="file:///Users/chrispaul/Desktop/Website/images/logo2.png" alt="Northtide Logo" width="300" height="165"></a>
+
+  </header>
+
+
+
+  <!-- Image header -->
+<!-- Navbar -->
+<div id="navbar2" class="-center">
+
+<div class="-bar -white -box -centre-align -large -hide-small -hide-medium" style="padding:2px 18px">
+
+     <a href="file:///Users/chrispaul/Desktop/Website/homepage/northtide.html" class="-navbar-item -button -padding- large -hover-white -hover-text-green">HOME</a>
+
+
+<div class="dropdown">
+  <div class="dropdown">
+    <a href="file:///Users/chrispaul/Desktop/Website/shop/shop.html">
+    <button class="dropbtn -button -hover-white -hover-text-green">SHOP</button></a>
+    <div class="dropdown-content">
+      <div class="header">
+        <h3>Shop Menu</h3>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3><u>Aparrel</u></h3>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AparrelCategories/Hoodies.html">Hoodies</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AparrelCategories/Fleeses.html">Fleeses</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AparrelCategories/Tees.html">Tees</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AparrelCategories/Headwear.html">Headwear</a>
+        </div>
+        <div class="column">
+          <h3><u>Accessories</u></h3>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AccessorieCategories/bags.html">Backpacks</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AccessorieCategories/calendars.html">Calendars</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AccessorieCategories/mugs.html">Mugs</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/AccessorieCategories/stickers.html">Stickers</a>
+        </div>
+        <div class="column">
+          <h3><u>More</u></h3>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/Aparrel.html">ALL APARREL</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/Accessories.html">ALL ACCESSORIES</a>
+          <a href="file:///Users/chrispaul/Desktop/Website/shop/shopAllProducts.html">ALL PRODUCTS</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+    <a href="file:///Users/chrispaul/Desktop/Website/contact/contact.html" class="-navbar-item -button -hide- medium -padding- large -hover-white -hover-text-green">CONTACT US</a>
+    <a href="file:///Users/chrispaul/Desktop/Website/blog/blog.html" class="-navbar-item -button -hide- medium -padding- large -hover-white -hover-text-green">BLOG </a>
+    <a href="file:///Users/chrispaul/Desktop/Website/about%20us/aboutUS.html" class="-navbar-item -button -hide- medium -padding- large -hover-white -hover-text-green">ABOUT US </a>
+    <a href="file:///Users/chrispaul/Desktop/Website/%23thenorthtide.html" class="-navbar-item -button -hide- medium -padding- large -hover-white -hover-text-green -animate-opacity -text-green">#thenorthtide </a>
+
+  </div>
+</div>
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<div class=" -container  -white">
+<p></p>
+<h0 class=""><center><strong><u>WEEK 1 #thenorthtide</u></strong><center></h0>
+  <h3 class=""><center><strong>Select one of our six finalists in this weeks draw!</strong><center></h3>
+    <h4 class=""><center>The photos below are the six finalist for this week's draw. Select the user's account name in the dropdown box below to cast your vote. Choose wisely as only one vote will be allowed. Sunday at midnight pacific time ends the window to which you can vote.</center></h4>
+    </div>
+
+<!-- Grid 2 for clothes-->
+  <div class="-display-container -row -padding">
+
+    <div class=" -col l4 m6 s12 productNav  -padding-small -hover-text-green">
+      <div class=" -white   -hover-opacity">
+      <img src="file:///Users/chrispaul/Desktop/Website/images/wave.jpg" alt="Chris Paul" style="width:100%" class=" "></div>
+      <h4><i><div class="-black ">@CHRISSPAUL</div></i></h4>
+      <!-- END About/Intro Menu -->
+      </div>
+
+
+    <div class=" -col l4 m6 s12 productNav  -padding-small -hover-text-green">
+      <div class=" -white   -hover-opacity">
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_67.jpg" alt="Chris Paul" style="width:100%" class=" "></div>
+      <h4><i><div class="-black ">@JONNYPAUL</div></i></h4>
+      <!-- END About/Intro Menu -->
+      </div>
+
+
+    <div class=" -col l4 m6 s12 productNav  -padding-small -hover-text-green">
+      <div class=" -white   -hover-opacity">
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_75.jpg" alt="Chris Paul" style="width:100%" class=" "></div>
+      <h4><i><div class="-black ">@RHYS LOGAN</div></i></h4>
+      <!-- END About/Intro Menu -->
+      </div>
+
+          <div class=" -col l4 m6 s12 productNav  -padding-small -hover-text-green">
+      <div class=" -white   -hover-opacity">
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_5a.jpg" alt="Chris Paul" style="width:100%" class=" "></div>
+      <h4><i><div class="-black ">@JESSMULHOLLAND</div></i></h4>
+      <!-- END About/Intro Menu -->
+      </div>
+
+
+    <div class=" -col l4 m6 s12 productNav  -padding-small -hover-text-green">
+      <div class=" -white   -hover-opacity">
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_48.jpg" alt="Chris Paul" style="width:100%" class=" "></div>
+      <h4><i><div class="-black ">@RODGERPATTERSON</div></i></h4>
+      <!-- END About/Intro Menu -->
+      </div>
+
+
+    <div class=" -col l4 m6 s12 productNav  -padding-small -hover-text-green">
+      <div class=" -white   -hover-opacity">
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_73.jpg" alt="Chris Paul" style="width:100%" class=" "></div>
+      <h4><i><div class="-black ">@BOB SMYTH</div></i></h4>
+      <!-- END About/Intro Menu -->
+      </div>
+  </div>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+<form action="/action_page.php">
+<div class=" -container-small -black">
+      <i onclick="document.getElementById('vote').style.display='block'"></i>
+      <p></p>
+      <h4 class=""><center><strong>TO START VOTING ENTER YOUR EMAIL</strong><center></h4>
+    
+      <p><center><input class=" -input-placeholder  -border" type="email" style="width: 480px;" required placeholder="Enter e-mail" required></p></center>
+
+      
+
+       <center><button class=" -label -button3 -padding-large -border" id="myBtn3 "style="width:480px;"></i> YOUR SELECTED WINNER </b>
+       <select name="size">
+       <option value="1" >1: @Chrisspaull</option>
+       <option value="2">2: @Jonnypaul</option>
+       <option value="3">3: @RhysLogan</option>
+       <option value="4">4: @JessMulholland</option>
+       <option value="5">5: @Rodger Petterson</option>
+       <option value="6">6: @Bob Smyth</option>
+       </select>
+       </button></center>
+       
+       <p></p>
+
+<center><input type="SUBMIT" value="CLICK TO VOTE" class=" -button -padding-large  -green  -margin-center" style="width: 480px;" onclick="document.getElementById('vote').style.display='block'"></button></center></form>
+
+<h7 class="-text-green"><center>Email addresses are verified by data validation software. <center></h7>
+
+  <h7 class="-text-green"><center>Any email address deemed invalid will be removed from vote count.<center></h7>
+     </div>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+              <!-- Grid 2 for winners-->
+
+  <div class=" -row  -padding -center">
+
+       <div class=" -col l4 m3 s1 productNav -hover-opacity -center"></div>
+
+   <div class=" -col l4 m6 s12 productNav -hover-opacity-min -hover-text-green -center">
+     <a class ="-hover-text-green" href="<button type="button" onclick="document.getElementById('2019winners').style.display='block'"></button>
+    <img src="file:///Users/chrispaul/Desktop/Website/images/cameraguy2.png" alt="Mountains" style="width:100%">
+    <h1><strong><div class="centered -hover-text-green -wide">2019 WINNERS</div></strong></h1>
+   </div>
+   </a>
+
+  </div>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+    
+     <div class=" -container-small -padding-small">
+    <h4 class=""><center>For the entire year we are running a weekly photo competition based on nature photography. The rules are easy, capture a great picture that relates to nature, follow and tag <strong>@northtide</strong> on Instagram and post your photo with the hashtag <strong>#thenorthtide</strong></center></h4> 
+
+        <h4 class=""><center>During each week four finalists are selected and the public votes used to determine the winner. The winner's image is shared on the <strong>@northtide</strong> Instagram account.</center></h4> 
+
+          <h4 class=""><center>The winner receives a $100 gift card to northtide.shop and a chance to have his/her photo featured on a Northtide product.
+         </center></h4> 
+
+          <h4 class=""><center> A limited edition clothing collection will be formed based on the best images from the 52 weekly winners. Past winners selected will be contacted in due course regarding details.<center/></h4> 
+
+            <h4 class=""><center><strong>Explore more & share your vision with us.</strong> </center></h4> 
+            </div>
+             &#160;
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+ <!-- Grid -->
+  <div class=" -row  -padding ">
+
+ <!-- Blog entries -->
+    <div class=" -col l15 s8">
+    </div>
+    <h2><span>FEATURED POSTS</span></h2>
+    <p>&nbsp; 
+
+
+<!-- Insta Card 1-->
+    <div class=" -col l4 m6 s12">
+      <!-- About Card -->
+      <div class=" -white  -margin -hover-opacity -border">
+        <div style="padding:16px;"> <a href="https://www.instagram.com/p/7syQGZqRVO/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:left; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: black; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: width: 40px;"> <img class=" -image" src="file:///Users/chrispaul/Desktop/Website/images/instalogo.png" alt="Northtide Logo" width="44" height="44"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style="padding-top: 1px;"> <div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 northtide</div><div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 North Coast, Northern Ireland</div></div></div></div>
+          
+        
+          
+          <div style="padding: 2% 0;"></div>
+          <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_72.jpg" alt="Mountains" style="width:100%">
+
+         <div style="padding-top: 8px;"> <div style=" text-align:center; color:green; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div>
+
+          <div style="padding: 2% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: black; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: black; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid black; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid black; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: black; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid black; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> 
+          <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BkvhCb0gshS/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank"><center>Cliff jumping straight into Wednesday.</a></p> 
+            <p style=" color:grey; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/northtide/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> NORTHTIDE</a> (@northtide) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-07-02T20:19:26+00:00">Jul 2, 2018 at 1:19pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        <div class=" -container  -white">
+      
+          <p></p>
+        </div>
+    </div>
+
+      <!-- END About/Intro Menu -->
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+   <!-- Insta Card 2-->
+<div class=" -col l4 m6 s12">
+      <!-- About Card -->
+      <div class=" -white  -margin -hover-opacity -border">
+        <div style="padding:16px;"> <a href="https://www.instagram.com/p/7syQGZqRVO/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:left; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: black; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: width: 40px;"> <img class=" -image" src="file:///Users/chrispaul/Desktop/Website/images/instalogo.png" alt="Northtide Logo" width="44" height="44"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style="padding-top: 1px;"> <div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 northtide</div><div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 North Coast, Northern Ireland</div></div></div></div>
+          
+        
+          
+          <div style="padding: 2% 0;"></div>
+          <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_51.jpg" alt="Mountains" style="width:100%">
+
+         <div style="padding-top: 8px;"> <div style=" text-align:center; color:green; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div>
+
+          <div style="padding: 2% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: black; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: black; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid black; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid black; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: black; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid black; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> 
+          <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BkvhCb0gshS/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank"><center>Temple run 📷: @_jonnypaul</a></p> 
+            <p style=" color:grey; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/northtide/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> NORTHTIDE</a> (@northtide) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-03-20T36:19:26+00:00">Mar 13, 2019 at 8:36pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        <div class=" -container  -white">
+      
+          <p></p>
+        </div>
+    </div>
+
+      <!-- END About/Intro Menu -->
+    </div>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+   <!-- Insta Card 2-->
+<div class=" -col l4 m6 s12 -hide-large">
+      <!-- About Card -->
+      <div class=" -white  -margin -hover-opacity -border">
+        <div style="padding:16px;"> <a href="https://www.instagram.com/p/7syQGZqRVO/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:left; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: black; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: width: 40px;"> <img class=" -image" src="file:///Users/chrispaul/Desktop/Website/images/instalogo.png" alt="Northtide Logo" width="44" height="44"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style="padding-top: 1px;"> <div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 northtide</div><div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 North Coast, Northern Ireland</div></div></div></div>
+          
+        
+          
+          <div style="padding: 2% 0;"></div>
+          <img src="file:///Users/chrispaul/Desktop/Website/images/vanLife.jpg" alt="Mountains" style="width:100%">
+
+         <div style="padding-top: 8px;"> <div style=" text-align:center; color:green; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div>
+
+          <div style="padding: 2% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: black; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: black; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid black; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid black; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: black; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid black; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> 
+          <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BJtVLgTB404/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank"><center>The Van Life #TB: @_jonnypaul</a></p> 
+            <p style=" color:grey; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/northtide/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> NORTHTIDE</a> (@northtide) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-03-20T36:19:26+00:00">Aug 29, 2016 at 2:49pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        <div class=" -container  -white">
+      
+          <p></p>
+        </div>
+    </div>
+
+      <!-- END About/Intro Menu -->
+    </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!-- Insta Card 3--> 
+      <div class=" -col l4 m6 s12">
+      <!-- About Card -->
+      <div class=" -white  -margin -hover-opacity -border">
+        <div style="padding:16px;"> <a href="https://www.instagram.com/p/7syQGZqRVO/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:left; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: black; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: width: 40px;"> <img class=" -image" src="file:///Users/chrispaul/Desktop/Website/images/instalogo.png" alt="Northtide Logo" width="44" height="44"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style="padding-top: 1px;"> <div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 northtide</div><div style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> &#160 North Coast, Northern Ireland</div></div></div></div>
+          
+        
+          
+          <div style="padding: 2% 0;"></div>
+          <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_6e.jpg" alt="Mountains" style="width:100%">
+
+         <div style="padding-top: 8px;"> <div style=" text-align:center; color:green; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div>
+
+          <div style="padding: 2% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: black; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: black; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: black; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid black; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid black; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: black; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid black; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> 
+          <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BkvhCb0gshS/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:black; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank"><center>Bobbing along the beautiful briny sea...</a></p> 
+            <p style=" color:grey; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/northtide/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> NORTHTIDE</a> (@northtide) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-09-26T16:15:26+00:00">Sep 26, 2015 at 4:15pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        <div class=" -container  -white">
+      
+          <p></p>
+        </div>
+    </div>
+
+      <!-- END About/Intro Menu -->
+    </div>
+
+<!-- END  -content -->
+</div>
+    <p></p>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- END  -content -->
+</div>
+<div class="flourish">
+  <img class=" -image" src="file:///Users/chrispaul/Desktop/Website/images/logoPoint.png" alt="Northtide Logo" class= "-hover-opacity" width="44" height="44">
+</div>
+<p></p>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class=" -modal">
+  <div class=" -modal-content -animate-top" style="padding:12px">
+    
+    <div class=" -container  -white">
+      
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove  -transparent  -button  -xlarge  -right"></i>
+      <p>&nbsp; <h1 class=" "><center>SUBSCRIBE TO OUR NEWSLETTER<center></h1>
+        <p><center>For updates about new products, the company and more..<center></p>
+    
+        <form action="/action_page.php">
+        <div class="form-group">
+        <label for="email">
+        Email:</label>
+        <input type="email" class="form-control -input  -border" placeholder="Example: username@emailprovider.co.uk"
+        id="email" name="email" required maxlength="50">
+        <p></p>
+        </div>
+
+        <input type="submit" value="Subscribe" class=" -button  -block  -padding-large  -red  -margin-bottom" onclick="document.getElementById('none').style.display='block'" >
+     </form>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Subscribe/ Vote successful Modal -->
+<div id="vote" class=" -modal -padding">
+  <div class=" -modal-content -animate-top" style="padding:12px">
+    <i onclick="document.getElementById('vote').style.display='none'" class="fa fa-remove  -transparent  -button  -xlarge  -right"></i>
+    <div class=" -container  -white">
+      
+    <h1 class=" "><center><strong>THANKS FOR VOTING! </strong><center></h1>
+      <h4 class=" "><center><strong>check out whats happening below👉🏼👉🏼 </strong><center></h4>
+
+
+<img src="file:///Users/chrispaul/Desktop/Website/images/wave.jpg" alt="Mountains" style="width:10%"><strong>@Chrisspaull</strong>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75.5%">
+     75.5%
+    </div>
+  </div>
+
+<img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_67.jpg" alt="Mountains" style="width:10%"><strong>@Jonnypaul</strong>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:72.3%">
+   72.3%
+    </div>
+  </div>
+
+<img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_75.jpg" alt="Mountains" style="width:10%"><strong>@RhysLogan</strong>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:64.2%">
+    64.2%
+    </div>
+  </div>
+
+<img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_5a.jpg" alt="Mountains" style="width:10%"><strong>@JessMulholland</strong>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:51.9%">
+     51.9%
+    </div>
+  </div>
+ 
+<img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_48.jpg" alt="Mountains" style="width:10%"><strong>@Rodger Petterson</strong>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:23.6%">
+     23.6%
+    </div>
+  </div>
+
+<img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_73.jpg" alt="Mountains" style="width:10%"><strong>@Bob Smyth</strong>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:6.1%">
+     6.1%
+    </div>
+  </div>
+
+        <h3 class=" "><strong><center>Check your email for $10 off your next purchase at <a href="https://northtide.shop" target="_blank">northtide.shop</a> <center></strong></h3>
+
+          <h7 class=" "><strong><center>Share Your Vote<center></strong></h7>
+
+
+        <div class="-footer-icons -large -center">
+
+        <a href="http://www.facebook.com/sharer.php?u=northtide.shop" target="blank"><i class="fa fa-facebook"></i></a>
+        
+        <a href="https://twitter.com/share?url=<URL>&text=I'VE VOTED, WHO'S YOUR WINNER? VOTE NOW thenorthtide weeklyphotocompetition &via=https://www.northtide.shop/#thenorthtide" target="_blank" class="share-btn twitter">    <i class="fa fa-twitter"></i></a>
+
+        <a href="mailto:?subject=NORTHTIDE: WHO'S YOUR WINNER? VOTE NOW! #thenorthtide #weeklyphotocompetition 
+        via @ https://www.northtide.shop/#thenorthtide" target="_blank" class="share-btn email">
+        <i class="fa fa-envelope"></i></a>
+
+         </div>
+
+
+
+
+
+        
+    </div>
+  </div>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- 2019 Winners Modal -->
+<div id="2019winners" class=" -modal -padding -margin-top" style="">
+  <div class=" -modal-content -animate-bottom -col l4i m10 s10 -display-middle" style=""> 
+    <i onclick="document.getElementById('2019winners').style.display='none'" class="fa fa-remove  -transparent  -button  -xlarge  -right"></i>
+    <div class=" -container  -white -centre-align">
+      
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext"><center><strong>WEEK 1 / 52</strong></center></div>
+    <div class="numbertext -black"><center>@chrisspaul  : Portrush, Northern Ireland</center></div>
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_49.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"><center><strong>WEEK 2 / 52</strong></center></div>
+    <div class="numbertext -black"><center>@jonnypaul  :  Co.Donegal, Ireland</center></div>
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_50.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"><center><strong>WEEK 3 / 52</strong></center></div>
+    <div class="numbertext -black"><center>@northtide  :  Portugal, Spain</center></div>
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_52.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"><center><strong>WEEK 4 / 52</strong></center></div>
+    <div class="numbertext -black"><center>@Bob Smyth  :  New Zealand, Australia</center></div>
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_57.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"><center><strong>WEEK 5 / 52</strong></center></div>
+        <div class="numbertext -black"><center>@chrisspaul  :  Tor Head, Northern Ireland</center></div>
+      <img src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_76.jpg" style="width:100%">
+  </div>
+<h1 class="-wide -text-green"><center><strong>2019 WINNERS</strong><center></h1>
+      <h4><center>Some well deserved winners during 2019...<center></h4>
+
+  <!-- Next and previous buttons -->
+
+
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column2">
+      <img class="demo cursor" src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_49.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column2"> 
+      <img class="demo cursor" src="
+file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_50.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_52.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="file:///Users/chrispaul/Desktop/Website/images/UNADJUSTEDNONRAW_thumb_57.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div></div></div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Snapchat Modal -->
+<div id="fa-snapchat" class=" -modal">
+  <div class=" -modal-content -animate-top" style="padding:12px">
+    <div class=" -container  -white">
+      <i onclick="document.getElementById('fa-snapchat').style.display='none'" class="fa fa-remove  -transparent  -button  -xlarge  -right"></i>
+      <h1 class=" -wide"><center>ADD US ON SNAPCHAT<center></h1>
+      <p><center>Gain a dynamic perspective behind the scenes of the company...<center></p>
+      <img class=" -image" src="file:///Users/chrispaul/Desktop/Website/snapcodes/snapcode.png" alt="Northtide Logo" width="440" height="440">
+    </div>
+  </div>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+<footer class="footer-distributed">
+
+       
+       <div class="footer-center">
+<img class=" -image" src="file:///Users/chrispaul/Desktop/Website/images/logo2.png" alt="Northtide Logo" width="380" height="165"><p class="footer-company-name"> 
+        
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links -col l12 s13 m5 ">
+          <a class ="-hover-text-green" href="file:///Users/chrispaul/Desktop/Website/homepage/northtide.html">HOME</a>
+          ·
+          <a class ="-hover-text-green" href="file:///Users/chrispaul/Desktop/Website/shop/shop.html">SHOP</a>
+          ·
+          <a class ="-hover-text-green" href="file:///Users/chrispaul/Desktop/Website/contact/contact.html">CONTACT</a>
+          ·
+          <a class ="-hover-text-green" href="file:///Users/chrispaul/Desktop/Website/blog/blog.html">BLOG</a>
+          ·
+          <a class ="-hover-text-green" href="file:///Users/chrispaul/Desktop/Website/about%20us/aboutUS.html">ABOUT US</a>
+          ·
+          <a class ="-hover-text-green" href="file:///Users/chrispaul/Desktop/Website/%23thenorthtide.html">#thenorthtide</a>
+        </p>
+      </div>
+
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+
+        <div class="footer-icons">
+
+          <a class ="-hover-text-green" href="https://www.facebook.com/pg/Northtide-102425377797400/posts/?ref=page_internal"><i class="fa fa-facebook"></i></a>
+
+          <a class ="-hover-text-green" href="https://www.instagram.com/northtide/"><i class="fa fa-instagram"></i></a>
+
+          <a class ="-hover-text-green" href="https://twitter.com/Northtide1"><i class="fa fa-twitter"></i></a>
+
+          <a class ="-hover-text-green" href="<button type="button" onclick="document.getElementById('fa-snapchat').style.display='block'"></button><i class="fa fa-snapchat"></i></a>
+
+          <a class ="-hover-text-green" href="https://www.flickr.com/photos/183702099@N02/?"><i class="fa fa-flickr"></i></a>
+
+          <a class ="-hover-text-green" href="https://www.youtube.com/channel/UCLqZN1EA9VBUfbs8JpGcM3w?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+
+          <a class ="-hover-text-green" href="<button type="button" onclick="document.getElementById('subscribe').style.display='block'"></button><i class="fa fa-envelope"></i></a>
+
+      </div>
+
+      </div>
+
+    </footer>
+
+<footer class="footer2">
+<div class="banana">
+        <p class="footer-company-name">All rights reserved. Northtide &copy; 2019
+         <a href="#" class="-border-box -right -hover-text-green"><i class="fa fa-arrow-up  -margin-right"></i>&#160;&#160;TO THE TOP</a></p> 
+      </div>
+
+    </footer>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<script>
+
+
+
+// Subscribe Button
+document.getElementById("subscribe").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf(" -show") == -1) {
+    x.className += "  -show";
+  } else { 
+    x.className = x.className.replace("  -show", "");
+  }
+}
+
+// 2019 Winners Button
+document.getElementById("2019winners").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf(" -show") == -1) {
+    x.className += "  -show";
+  } else { 
+    x.className = x.className.replace("  -show", "");
+  }
+}
+
+// vote successfully registered Button
+document.getElementById("vote").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf(" -show") == -1) {
+    x.className += "  -show";
+  } else { 
+    x.className = x.className.replace("  -show", "");
+  }
+}
+
+// SNAPCHAT LOGO
+document.getElementById("fa-snapchat").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf(" -show") == -1) {
+    x.className += "  -show";
+  } else { 
+    x.className = x.className.replace("  -show", "");
+  }
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+
